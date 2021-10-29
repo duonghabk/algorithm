@@ -35,7 +35,7 @@ void solve(int c)
     cout << result << endl;
 }
 
-int main()
+int main2()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
