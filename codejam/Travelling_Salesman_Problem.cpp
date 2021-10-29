@@ -8,7 +8,7 @@
 using namespace std;
 int n = 4;
 int res = 99999;
-int x[20][20];
+int x[20][20] = {{0,20,35,10},{20,0,90,50},{35,90,0,12},{10,50,12,0}};
 bool visited[20] = {false};
 
 void init()
@@ -19,6 +19,7 @@ void init()
             cin >> x[i][j];
         }
     }
+
 }
 
 bool CheckVisited()
@@ -54,9 +55,7 @@ void Try(int i, int sum)
 int main()
 {
     ios_base::sync_with_stdio(0);
-    cin.tie(NULL);cout.tie(NULL);
-    n = 4;
-    x[4][4] = {(0,20,35,10),(20,0,90,50),(35,90,0,12),(10,50,12,0)};
+    cin.tie(NULL);cout.tie(NULL);    
     visited[0]=true;
     Try(0,0);
     cout<<res<<endl;
