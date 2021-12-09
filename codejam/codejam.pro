@@ -14,5 +14,7 @@ SOURCES += \
     #abcdef.cpp \
     #sociall_distancing.cpp \
     #data.cpp \
-    max_sum_three.cpp
+    max_sum_three.cpp \
+    cloppair.cpp \
+    binary_search.cpp
 
