@@ -2,16 +2,11 @@
 
 using namespace std;
 
+int t,n,k;
 
-
-void solve(int c)
+void solve(int *A)
 {
-    int ans = -1;
-    int len =0;
-    for(int i=0;i<n;i++)
-    {
-        cout<<A[i]<<"\n";
-    }
+    
 }
 
 int main()
@@ -19,7 +14,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    int t,n,k;
+    
     cin >> t;
     cin >> n;
     int A[n];
@@ -29,7 +24,7 @@ int main()
     
     for (int i = 0; i < t; ++i)
     {
-        solve(t);
+        solve(A);
     }
 
     return 0;
