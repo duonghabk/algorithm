@@ -13,7 +13,7 @@ Ví dụ: A = (1, -2, 2, 3, 4, 9, 10, 5, 6 ,7) thì dãy con đơn điệu tăng
 
 using namespace std;
 
-int t,n,k;
+int n;
 
 void solve(int *A)
 {
@@ -25,18 +25,11 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    
-    cin >> t;
     cin >> n;
     int A[n];
     for(int i=0; i<n;i++)
         cin>> A[i];
-    cin >>k;
-    
-    for (int i = 0; i < t; ++i)
-    {
-        solve(A);
-    }
-
+    cin >>k;    
+    solve(A);
     return 0;
 }
