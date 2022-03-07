@@ -1,5 +1,6 @@
 /*
  * https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1
+ Tìm sub array con có tổng lớn nhất
  * */
 #include<bits/stdc++.h>
 

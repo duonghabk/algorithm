@@ -17,6 +17,9 @@ obtained using the second method.
 In the second line, N preferences Di are inputted separately by a blank (The reference is an integer, -104 ≤ Di ≤ 104) 
 [Output format] The maximum preferences obtained using the second method are outputted.
 
+
+Tim chuooi con co tong lon nhat
+
 */
 #include <iostream>
 using namespace std;
@@ -34,10 +37,12 @@ void InputData(){
 
 void Solve()
 {
-	int i, sum = 0;
-	for (i = 0; i < N - 2; i++) {
-		sum = D[i] + D[i + 1] + D[i + 2];
-		if (sum > sol) sol = sum;
+	int maxHere = 0;
+	for(int i = 0;i<N;i++)
+	{
+		maxHere+=D[i];
+		if(sol <= maxHere) sol = maxHere;
+		if(maxHere< 0) maxHere = 0;
 	}
 }
 
