@@ -25,17 +25,14 @@ void init()
 }
 int knapsack(int W,int *Wt,int* Val, int n )
 {
-    cout<<"* "<<n<<"   "<<W<<"\n"<<endl;
     if(n==0||W == 0)
         return 0;
     if(Wt[n-1]>W)
     {
-        cout<<"** "<<n<<"   "<<W<<"\n"<<endl;
         return knapsack(W,Wt,Val,n-1);
     }
     else
     {
-        cout<<"*** "<<n<<"   "<<W<<"\n"<<endl;
         return max(knapsack(W,Wt,Val,n-1),Val[n-1] + knapsack(W - Wt[n-1],Wt,Val,n-1));
     }
 }

@@ -41,7 +41,7 @@ void solve(int *A)
         auto hi = upper_bound(v2.begin(),v2.end(),v1[i]); //Vị trí xuất hiện cuối cùng
         ans+=hi-lo;
     }
-    cout<<ans
+    cout<<ans;
 }
 
 int main()
