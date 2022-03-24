@@ -20,16 +20,16 @@ int main(){
     //	Create the code
     int res[2];
     int minsum = 10000;
-    for(int i = 0;i<N;i++){
-        if(A[i] > 0) break;
-        for(int j = N-1;j>=0;j--){
-            if(A[j]<0) break;
-            if(minsum > abs(A[i]+A[j])){
-                minsum = abs(A[i]+A[j]);
-                res[0] = i;res[1]= j;
-            }
-            if(abs(A[i]+A[j])<abs(A[i]+A[j-1])) break;           
+    int left = 0, right = N-1;
+    while(left <right){
+        if(minsum > abs(A[left] + A[right])){
+            minsum = abs(A[left] + A[right]);
+            res[0]= left;
+            res[1] = right;
         }
+        if((A[left] + A[right])< 0 ) left++;
+			else if((A[left] + A[right])> 0) right--;
+			else break;
     }
     cout<< res[0]<<" "<<res[1];
 
